@@ -52,7 +52,7 @@ export const App = ({ }) => {
           `?q=${lookingValue}&page=${page}&key=26513861-7ba7a860ef1b492cf85cf7d68&&image_type=photo&orientation=horizontal&per_page=12`
         );
         setPictures(prevState => [
-          ...prevState.pictures,
+          ...prevState,
           ...response.data.hits,
         ]);
       } catch (error) {
